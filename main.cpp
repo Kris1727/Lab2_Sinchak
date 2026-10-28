@@ -3,7 +3,6 @@
 
 using namespace std;
 
-// Базовий клас
 class Person {
 protected:
     string name;
@@ -21,7 +20,6 @@ public:
     }
 };
 
-// Учень успадковується від людини
 class Learner : public Person {
 protected:
     string school;
@@ -38,7 +36,6 @@ public:
     }
 };
 
-// Школяр успадковується від учня
 class Schoolchild : public Learner {
 private:
     int grade;
@@ -55,7 +52,6 @@ public:
     }
 };
 
-// Студент успадковується від учня
 class Student : public Learner {
 private:
     int course;
